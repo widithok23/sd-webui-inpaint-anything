@@ -1187,10 +1187,10 @@ def on_ui_tabs():
                     gr.Markdown("Mouse over image: Press `S` key for Fullscreen mode, `R` key to Reset zoom")
                 with gr.Row():
                     if ia_check_versions.gradio_version_is_old:
-                        sam_image = gr.Image(label="Segment Anything image", elem_id="ia_sam_image", type="numpy", brush_radius=8,
+                        sam_image = gr.Image(label="Segment Anything image", elem_id="ia_sam_image", type="numpy",
                                              show_label=False, interactive=True).style(height=480)
                     else:
-                        sam_image = gr.Image(label="Segment Anything image", elem_id="ia_sam_image", type="numpy", brush_radius=8,
+                        sam_image = gr.Image(label="Segment Anything image", elem_id="ia_sam_image", type="numpy",
                                              show_label=False, interactive=True, height=480)
 
                 with gr.Row():
